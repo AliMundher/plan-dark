@@ -1,0 +1,140 @@
+.save_g {
+  display: inline-block;
+  background-color: #3f8cff;
+  color: white;
+  font-size: 0.7em;
+  padding: 3px;
+  border-radius: 100px;
+  width: 60px;
+}
+.btn_hover {
+  padding: 6px 9px 6px 9px;
+  border-radius: 5px;
+}
+.subColor {
+  color: #65676a;
+}
+.title_plan {
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2.1em;
+}
+.text_plane {
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+.old_price {
+  text-decoration: line-through;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.new_price {
+  font-size: 2em;
+  font-weight: bold;
+}
+.before_g {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #283954;
+  border-radius: 50%;
+  position: absolute;
+  left: -26px;
+  top: 2px;
+}
+
+body {
+  background-color: #141419;
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0f;
+    width: 470px;
+    margin: 15% auto;
+    padding: 12px;
+    border-radius: 10px;
+    .btn_g {
+      color: white;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: none;
+      font-weight: bold;
+      font-size: 0.8em;
+      transition: all 0.3s ease-in-out;
+      &.btn_one {
+        @extend .btn_hover;
+      }
+      &.btn_two {
+        @extend .btn_hover;
+        .save {
+          @extend .save_g;
+        }
+      }
+      &.btn_three {
+        @extend .btn_hover;
+        .save {
+          @extend .save_g;
+        }
+      }
+      &:hover {
+        background-color: #34363a;
+      }
+    }
+  }
+  .plan {
+    width: 700px;
+    margin: auto;
+    .up {
+      position: relative;
+      top: -177px;
+    }
+    .plan_one {
+      margin-right: 15px;
+      background-color: #222429;
+      padding: 15px;
+      border-radius: 15px;
+      .plan_title {
+        @extend .title_plan;
+      }
+      .plan_text {
+        @extend .text_plane;
+      }
+      .plan_old_price {
+        @extend .old_price;
+      }
+      .plan_new_price {
+        @extend .new_price;
+      }
+    }
+    .list {
+      color: #a8abaf;
+      list-style: none;
+      li {
+        position: relative;
+        margin-bottom: 10px;
+        a {
+          text-decoration: dashed;
+          display: inline-block;
+          color: #a8abaf;
+          cursor: pointer;
+          border-bottom: 2px dashed #fff;
+        }
+        &:before {
+          @extend .before_g;
+        }
+      }
+    }
+    .chose {
+      background-color: #3f8cff;
+      color: #fff;
+      text-transform: capitalize;
+      width: 100%;
+      padding: 10px;
+      border-radius: 7px;
+      border: none;
+      margin-bottom: 15px;
+    }
+  }
+}

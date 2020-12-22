@@ -1,0 +1,136 @@
+.save_g, body header .btn_g.btn_two .save, body header .btn_g.btn_three .save {
+  display: inline-block;
+  background-color: #3f8cff;
+  color: white;
+  font-size: 0.7em;
+  padding: 3px;
+  border-radius: 100px;
+  width: 60px;
+}
+
+.btn_hover, body header .btn_g.btn_one, body header .btn_g.btn_two, body header .btn_g.btn_three {
+  padding: 6px 9px 6px 9px;
+  border-radius: 5px;
+}
+
+.subColor {
+  color: #65676a;
+}
+
+.title_plan, body .plan .plan_one .plan_title {
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2.1em;
+}
+
+.text_plane, body .plan .plan_one .plan_text {
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+
+.old_price, body .plan .plan_one .plan_old_price {
+  text-decoration: line-through;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.new_price, body .plan .plan_one .plan_new_price {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.before_g, body .plan .list li:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #283954;
+  border-radius: 50%;
+  position: absolute;
+  left: -26px;
+  top: 2px;
+}
+
+body {
+  background-color: #141419;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c0c0f;
+  width: 470px;
+  margin: 15% auto;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+body header .btn_g {
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body header .btn_g:hover {
+  background-color: #34363a;
+}
+
+body .plan {
+  width: 700px;
+  margin: auto;
+}
+
+body .plan .up {
+  position: relative;
+  top: -177px;
+}
+
+body .plan .plan_one {
+  margin-right: 15px;
+  background-color: #222429;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+body .plan .list {
+  color: #a8abaf;
+  list-style: none;
+}
+
+body .plan .list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+body .plan .list li a {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  display: inline-block;
+  color: #a8abaf;
+  cursor: pointer;
+  border-bottom: 2px dashed #fff;
+}
+
+body .plan .chose {
+  background-color: #3f8cff;
+  color: #fff;
+  text-transform: capitalize;
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=style.css.map */
